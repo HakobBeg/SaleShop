@@ -1,0 +1,12 @@
+<form [formGroup]="signUpForm">
+
+  <input placeholder="First Name" formControlName="name">
+  <input placeholder="Last Name"  formControlName="lastName">
+  <input placeholder="Email"  formControlName="mail">
+  <input placeholder="Login"  formControlName="login">
+  <input placeholder="Password" formControlName="pass">
+  <input placeholder="Confirm Password"  formControlName="passConfirm">
+
+  <button (click)="submit()" type="submit">Submit</button>
+
+</form>

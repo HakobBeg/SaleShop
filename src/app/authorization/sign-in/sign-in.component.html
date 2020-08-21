@@ -1,0 +1,10 @@
+
+<form [formGroup]="signInForm" (submit)="submit()">
+<span>Login</span>
+<input formControlName="login" type="text" placeholder="Login or Email">
+<span>Password</span>
+<input formArrayName="password" type="password" placeholder="Password">
+  <button type = "submit">Submit</button>
+</form>
+<a href="#">Already have account?</a>
+<a href="#">Forgot password</a>
