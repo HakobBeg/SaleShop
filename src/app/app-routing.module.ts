@@ -3,8 +3,7 @@ import {Routes, RouterModule} from '@angular/router';
 import {AuthorizationModule} from './authorization/authorization.module';
 
 const routes: Routes = [
-  {path: 'auth', loadChildren: () => AuthorizationModule}
-];
+  {path: 'auth', loadChildren: () => AuthorizationModule}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
