@@ -3,13 +3,17 @@ import {RouterModule, Routes} from '@angular/router';
 import {SignUpComponent} from './sign-up/sign-up.component';
 import {SignInComponent} from './sign-in/sign-in.component';
 import {AuthComponent} from './auth/auth.component';
+import {ErrorComponent} from '../error/error.component';
+import {AuthSelectComponent} from './auth-select/auth-select.component';
 
 
 const routes: Routes = [
   {
     path: '', component: AuthComponent, children: [
-      {path: 'signIn', component: SignInComponent},
-      {path: 'signUp', component: SignUpComponent}
+      {path: '', component: AuthSelectComponent},
+      {path: 'signin', component: SignInComponent},
+      {path: 'signup', component: SignUpComponent},
+      {path: '**', component: ErrorComponent}
     ]
   }
 ];
