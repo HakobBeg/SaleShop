@@ -6,6 +6,7 @@ import {AuthRoutingModule} from './auth-routing.module';
 import {ReactiveFormsModule} from '@angular/forms';
 import {AuthComponent} from './auth/auth.component';
 import { AuthSelectComponent } from './auth-select/auth-select.component';
+import { PasswordResetComponent } from './password-reset/password-reset.component';
 
 export function getAuthModule(): AuthorizationModule {
   return AuthorizationModule;
@@ -16,7 +17,8 @@ export function getAuthModule(): AuthorizationModule {
     AuthComponent,
     SignInComponent,
     SignUpComponent,
-    AuthSelectComponent
+    AuthSelectComponent,
+    PasswordResetComponent
   ],
   imports: [
     CommonModule,

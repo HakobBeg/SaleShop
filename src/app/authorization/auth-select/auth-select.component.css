@@ -1,0 +1,18 @@
+.content{
+  padding: 20%;
+  text-align: center;
+}
+
+.content span{
+  margin: 20px;
+  border-style: solid;
+  border-radius: 13px;
+  padding: 10px;
+  transition: 500ms;
+}
+
+.content span:hover{
+  background-color: black;
+  color: whitesmoke;
+  border-color: #b4b8b8;
+}
