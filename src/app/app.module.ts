@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {ShopModule} from './shop/shop.module';
 import { ErrorComponent } from './error/error.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { ErrorComponent } from './error/error.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ShopModule
+    ShopModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
